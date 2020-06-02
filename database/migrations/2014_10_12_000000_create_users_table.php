@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('email');
             $table->boolean('email_verified')->default(0);
             $table->string('password');
+            $table->boolean('reset_password')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });
